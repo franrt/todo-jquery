@@ -4,12 +4,25 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <div class="container">
+        <h1>To-do App</h1>
+        <form class="add-items">
+            <input type="text" class="form-control" id="todo-list-item" placeholder="Ingresa tu tarea">
+            <button class="add" type="submit">Añadir</button>
+        </form>
+        <ul id="list-items"></ul>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
 </body>
 
 </html>
