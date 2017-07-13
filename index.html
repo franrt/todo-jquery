@@ -5,24 +5,62 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <!--FontAwesome CDN-->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Pacifico" rel="stylesheet">
     <!-- Materialize Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>To-do App</h1>
-        <form class="add-items">
-            <input type="text" class="form-control" id="todo-list-item" placeholder="Ingresa tu tarea">
-            <button class="add" type="submit">Añadir</button>
-        </form>
-        <ul id="list-items"></ul>
+    <section class="container">
+        <div class="row">
+            <div class="col m12 s12">
+                <div class="title center-align"><span id="isotype"><img src="assets/img/1.png" alt="logo" id="logo"></span>ToDoApp</div>
+                <div class="work center-align">MAKE IT WORK</div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row" id="info">
+            <div class="col m12 s12">
+                <div class="row" id="lateral">
+                    <div class="row">
+                        <div class="col s12 m10" id="wrap">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/bg1.jpg" height="150">
+                                    <span class="card-title" id="wip">work in progress!</span>
+                                </div>
+                                <ul id="listado"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="list">
+                    <div class="col m8 push-m4 s12">
+                        <div>
+                            <div>
+                                <p>With ToDoApp you can get all your tasks in one place, follow your work in progress, add more stuff to-do and remove what's been done.</p>
+                            </div>
+                            <form class="add-items">
+                                <input type="text" class="form-control" id="to-do" placeholder="add a task!">
+                                <button class="add-items btn" type="submit">add</button>
+                            </form>
+                            <div class="divider" id="divider"></div>
+                            <div class="center-align">
+                                <h3>work done!</h3>
+                            </div>
+                            <ul id="work-done"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
